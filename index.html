@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evoluia Agency - Sua Marca no Controle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -13,18 +13,19 @@
     }
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
+      background: linear-gradient(to bottom, #0e0e0e, #1a1a1a);
       color: #ffffff;
       line-height: 1.6;
+      overflow-x: hidden;
     }
     header {
-      background: linear-gradient(to right, #000000, #1a1a1a);
-      padding: 80px 20px;
+      background: linear-gradient(145deg, #000000, #1a1a1a);
+      padding: 100px 20px 60px;
       text-align: center;
       position: relative;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: #00ffcc;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -56,6 +57,7 @@
       padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
+      position: relative;
     }
     .section-dark {
       background: #1a1a1a;
@@ -81,11 +83,35 @@
       text-align: center;
       margin: 60px 0;
     }
+    .ai-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
     footer {
       text-align: center;
       padding: 30px;
       background-color: #000;
       color: #666;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00ffcc;
+      color: black;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 30px;
+      box-shadow: 0 0 15px rgba(0,255,204,0.4);
+      z-index: 1000;
     }
   </style>
 </head>
@@ -93,6 +119,7 @@
   <header>
     <h1>Evoluia Agency</h1>
     <p>A agência que transforma negócios locais em líderes absolutos do seu mercado.</p>
+    <img class="ai-image" src="https://images.unsplash.com/photo-1631020561223-e862d3bcdcf5?auto=format&fit=crop&w=1100&q=80" alt="IA futurista">
     <a class="cta-button" href="https://wa.me/553599116183?text=Quero+impulsionar+meu+neg%C3%B3cio+com+a+Evoluia" target="_blank">Quero dominar meu mercado</a>
   </header>
 
@@ -143,5 +170,7 @@
   <footer>
     <p>&copy; 2025 Evoluia Agency · Alfenas · Todos os direitos reservados.</p>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/553599116183?text=Ol%C3%A1%2C+quero+ajuda+da+Evoluia" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
